@@ -2,6 +2,7 @@
 This repository contains a collection of data engineering projects demonstrating various concepts, tools, and real-world patterns used in modern data pipelines. Each project is self-contained and focuses on a specific area such as ingestion, ETL/ELT, orchestration, data modeling, or cloud engineering.
 
 ## Repository Structure
+```bash
 .
 ├── project-1-name/
 │   └── README.md
@@ -11,7 +12,7 @@ This repository contains a collection of data engineering projects demonstrating
 │   └── README.md
 ├── shared-resources/        # Optional utilities shared across projects
 └── README.md                # (this file)
-
+```
 ## 📘 What’s Inside
 
 Each project highlights one or more of the following data engineering skills:
