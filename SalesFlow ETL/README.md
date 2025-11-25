@@ -28,39 +28,43 @@ data-engineering-project/
 ## 🧪 Input Data Format
 
 The CSV file must have the columns:
-
+```
 - date (e.g., "2024-01-01")
 - amount (numeric)
-
+```
 Example:
-
+```
 date,amount
 2024-01-01,100
 2024-01-01,200
 2024-01-02,300
-
+```
 
 ---
 
 ## 🛠 Setup & Installation
 
 ### 1. Clone the project
-
+```
 git clone <your-repo>
 cd data-engineering-project
+```
 
 ### 2. Install dependencies
+```
 pip install -r requirements.txt
-
+```
 ### 3. Add raw CSV file
 Place your CSV file at:
+```
 data/raw/sales.csv
-
+```
 ---
 
 ## ▶️ Running the Pipeline
+```
 python src/pipeline.py
-
+```
 This will:
 
 1. Read `data/raw/sales.csv`
@@ -70,8 +74,8 @@ This will:
 4. Create SQLite DB at:
   database/sales.db
 5. Load:
-- `sales` table
-- `daily_summary` table (aggregated totals)
+   - `sales` table
+   - `daily_summary` table (aggregated totals)
 
 ---
 
@@ -92,11 +96,14 @@ You can deploy the pipeline using:
 
 ### **Option A: Cron (Linux)**
 Edit crontab:
+```
 crontab -e
+```
 
 Add to run daily at 2 AM:
+```arduino
 0 2 * * * python /path/to/pipeline.py
-
+```
 
 ### **Option B: Airflow**
 
