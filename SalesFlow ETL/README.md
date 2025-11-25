@@ -6,7 +6,7 @@ The pipeline reads raw CSV data, cleans it, converts it to Parquet, and loads it
 ---
 
 ## 🏗 Project Structure
-
+```bash
 data-engineering-project/
 │
 ├── data/
@@ -22,7 +22,7 @@ data-engineering-project/
 ├── database/               # SQLite DB lives here
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 🧪 Input Data Format
@@ -78,10 +78,11 @@ This will:
 ## 📊 Verifying the Output
 
 ### View tables in SQLite:
+```bash
 sqlite3 database/sales.db
 sqlite> .tables
 sqlite> SELECT * FROM daily_summary;
-
+```
 
 ---
 
